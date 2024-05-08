@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper.rwa{
+            position: relative;
+            height: 0;
+            padding-top: 56%;
+            /* 원래는 height에서 기준인데, 0으로 해버리면 기준을 width로 적용한다. */
+        }
+        .rwa iframe{
+            position: absolute;
+            left:0;
+            width:100%;
+            top:0;
+            height:100%
+        }
+
+        .imgwrapper{
+            background: url(https://kcompony7.jpg3.kr/web/pigment/banner/pc.jpg) no-repeat center;
+            height:0;
+            padding-top: 43%;
+            background-size: cover;
+            position: relative;            
+        }
+        .imgwrapper h2{
+            position: absolute;
+            left:0; top:0; right:0; bottom:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper rwa">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/W8OKOIzA74o?si=Gx_rI_g09VIoCQjj" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+<!-- 위에는 반응형 -->
+    <div class="wrapper">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/W8OKOIzA74o?si=Gx_rI_g09VIoCQjj" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="imgwrapper">
+        <h2>배경 반응형처리하기</h2>
+    </div>
+    <div class="wrapper rwa">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/qDoD3psvJho?si=LG62TdnmOA5isGZd" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+</body>
+</html>
